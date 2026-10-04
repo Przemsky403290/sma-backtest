@@ -1,4 +1,5 @@
 Polish
+
 Backtest strategi ze średnimi kroczącymi() 50 dni giełdowych - krótki okres,
 200 dni giełdowych - długi okres) i prównanie ze zwykłym zakupem i trzymaniem s&p500
 

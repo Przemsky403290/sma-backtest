@@ -22,7 +22,7 @@ def load_prices(TICKER, START):
     np.random.seed(42)
     dates = pd.bdate_range(START, periods= 3500)   # bdate = business date
     returns = np.random.normal(0.0004, 0.012, len(dates))   #(mean, std, length)
-    return pd.Series(100 * np.exp(np.comsum(returns)), index = dates)    # Black-Schols' model to estimate options
+    return pd.Series(100 * np.exp(np.cumsum(returns)), index = dates)    # Black-Schols' model to estimate options
 
 
 def backtest(prices):
